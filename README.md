@@ -1,6 +1,17 @@
-# Maratona-Dev - "Blood-Donors"
--A aplicação foi construida em dois dias, durante a maratona de programação oferecida pela Rocketseat. Utilizando no front-end hmtl, java scrypt e css ; para o front-end foi utilizado node.js com a framework express, nunjucks como template engine e postgreSQL como banco de dados.
+# 3ª Maratona-Dev-Rocketseat - "Blood-Donors":
+A web application that owns the objective to create a database of people who want to donate blood.
 
--O site tem como objetivo expor de maneira simples e direta a necessidade da doação de sangue, apresentando fatos que justificam o seu proposito, para então coletar os dados de contato de possiveis interessados e armazena-los em banco de dados, para então serem fornecidos aos orgãos responsáveis.
 
-# Gif da aplicação:
+- [x] Html.
+- [x] Css.
+- [x] JavaScript.
+- [x] Node.Js
+- [x] Express.Js
+- [x] PostgreSQL
+ 
+## User Stories
+
+- [x] User can show and hide the input box.
+- [x] User can add their data at the input box.
+- [x] User can see his data at the "Last donors" section.
+
