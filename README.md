@@ -14,5 +14,7 @@ A web application that owns the objective to create a database of people who wan
 
 - [x] User can show and hide the input box.
 - [x] User can add their data at the input box.
+- [x] if any input box it is null, the app will return an error message.
 - [x] User can see his data at the "Last donors" section.
+
 
