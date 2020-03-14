@@ -17,4 +17,7 @@ A web application that owns the objective to create a database of people who wan
 - [x] if any input box it is null, the app will return an error message.
 - [x] User can see his data at the "Last donors" section.
 
+## Gif and Screenshot:
+
+* [Exemple](https://github.com/robertokbr/Donate_Blood/tree/master/exemple)
 
