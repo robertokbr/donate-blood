@@ -18,7 +18,7 @@ A web application that owns the objective to create a database of people who wan
 - [x] User can see his data at the "Last donors" section.
 
 ## Gif and Screenshot:
-<image src="https://github.com/robertokbr/Donate_Blood/blob/master/exemple/screen.png" height="600 em"/>
+<image src="https://github.com/robertokbr/Donate_Blood/blob/master/exemple/screen.png"/>
 
 * [Exemple](https://github.com/robertokbr/Donate_Blood/tree/master/exemple)
 
