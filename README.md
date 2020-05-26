@@ -1,28 +1,24 @@
-<h4 align="center">
-<img src="https://github.com/robertokbr/Donate-Blood/blob/master/public/logo.png" /><br>
+
+<img src="https://github.com/robertokbr/Donate-Blood/blob/master/RunningGif/WhvLsNrFRV.gif" /><br>
 
 
 
-# MARATONA DEV 3.0
 
-<image src="https://github.com/robertokbr/Donate_Blood/blob/master/exemple/screen.png"/>
+# Donate Blood
 
-* [Exemple](https://github.com/robertokbr/Donate_Blood/tree/master/exemple)
-
-
-## Donate Blood
-
-A web application that owns the objective to create a database of people who want to donate blood.
+A simple web application that owns the objective to create a database of people who want to donate blood.
 
 
 ## Built With
 
-- [x] Html.
-- [x] Css.
-- [x] JavaScript.
-- [x] Node.Js
-- [x] Express.Js
-- [x] PostgreSQL
+* Html.
+* Css.
+* JavaScript.
+* Node.Js
+* Express.Js
+* PostgreSQL
+* Nodemon
+* Nunjucks
  
 ## User Stories
 
@@ -38,5 +34,15 @@ A web application that owns the objective to create a database of people who wan
 - Create a branch with your feature: `git checkout -b my-feature`
 - Commit your change: `git commit -m 'feat: My new feature'`
 - Push your branch: `git push origin my-feature`
+
+### HOW TO USE
+
+- Install yarn and run the cmd
+
+```jsx
+$ git clone https://github.com/robertokbr/Donate-Blood.git
+$ yarn
+$ yarn start
+```
 
 
