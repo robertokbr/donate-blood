@@ -18,6 +18,31 @@ body{
     background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif; 
 }
+header{
+    background-color:#f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    margin-top: 35px;
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    margin-right: 50px;
+    
+}
+a{
+    
+    text-decoration: none;
+    color: rgba(92, 92, 92, 0.637);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    
+}
 
 h1,h2{
     color: #000000cc;  
@@ -32,7 +57,7 @@ div#container{
     justify-content: space-evenly;
     padding: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.034) ;
-
+    
 }
 
 
@@ -60,7 +85,7 @@ espaçamentos com margin vertical
 /* HEADER 
 TITULOS*/
 
- main h2 {
+main h2 {
     margin-top: 80px;
     margin-bottom: 90px;
     font-weight: bolder;
@@ -97,8 +122,8 @@ main h2 span {
     border-radius: 4px;
     background-color: #ff4f4f;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.082) ;
-
-
+    
+    
     border: none;
     color: white;
     font-weight: bold;
@@ -117,7 +142,8 @@ main h2 span {
 #header p{
     
     font-size: 15px;
-    color: rgba(65, 65, 65, 0.637);
+    color: rgba(92, 92, 92, 0.637);
+    
     text-align: start;
     font-family: 'Montserrat', sans-serif;
     font-weight:bold;
@@ -215,7 +241,7 @@ main .donors{
     border-top-right-radius: 0%;
     
     transform: rotate(-45deg);
-
+    
 }
 
 .donor p{
@@ -223,13 +249,14 @@ main .donors{
     margin-top: 24px;
     margin-bottom: 64px;
     font-size: 14px;
+    font-weight: bold;
+    color: rgba(58, 58, 58, 0.993);
     
 }
 footer{
     
     margin-top: auto;
     padding-bottom:16;
-    
     border: 1px solid #eeee;
 }
 
