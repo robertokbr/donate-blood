@@ -1,5 +1,5 @@
 document
-.querySelector('header button')
+.querySelector('#header button')
 .addEventListener("click", function(){
 
 document.querySelector('.form')

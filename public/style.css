@@ -2,14 +2,8 @@
 global
 */
 
-*{
- 
-    /*sempre q adicionamos padding o navegador automaticamente adiciona no width 
-    a margem que adicionamos ao padding, portanto o box-sizing com o valor border box
-    limita isso*/
-    
+*{ 
     box-sizing: border-box;
-
 }
 
 /*  BODY  */
@@ -17,32 +11,37 @@ html,body{
     margin: 0;
 }
 
-
-/* -css tricks-
-configurando display flexivel, com a janela de visão destinada 
-100% ao body e o rodapé sempre respeitando o limite da posição*/
 body{
-display:flex ;
-flex-direction: column;
-height: 100vh;
-
-/*  FONTE */
-font-family: 'Roboto', sans-serif;
-
-background-color:#f9f9f9;
-
-
+    display:flex ;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif; 
 }
 
 h1,h2{
-    color: #000000cc;
-    
-    
-    }
+    color: #000000cc;  
+}
 
 /*ESTRUTURA */
-main,header, footer {
-/*ALINHAMENTOS D TEXTOS*/
+
+div#container{
+    background-color:#f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.034) ;
+
+}
+
+
+img#heart{
+    width: 600px;
+}
+
+main, footer {
+    /*ALINHAMENTOS D TEXTOS*/
     text-align:center ;
 }
 
@@ -51,31 +50,38 @@ main,header, footer {
 espaçamentos com margin vertical
 */
 
-header, .form, main {
-margin: 0 auto 70px ;
-width: 90%;
-max-width:500px ;
-
-
+#header, .form, main {
+    margin: 0 auto 70px ;
+    width: 90%;
+    max-width:500px ;
+    
+    
 }
- /* HEADER 
- TITULOS*/
+/* HEADER 
+TITULOS*/
 
-header h1, main h2 {
-
-    margin-bottom: 70px;
+ main h2 {
+    margin-top: 80px;
+    margin-bottom: 90px;
+    font-weight: bolder;
+    font-size: 50px;
 }
-
+#header h2{
+    margin-bottom: 50px;
+    font-weight: bolder;
+    font-size: 50px;
+    
+}
 
 
 
 main h2 span {
-color: #ff4f4f;
-
+    color: #ff4f4f;
+    
 }
 
 .form h2 {
-
+    
     text-align: right;
     color: #ffffffee;
     font-size: 18px;
@@ -83,56 +89,62 @@ color: #ff4f4f;
 
 /* HEADER */
 
-header button{
-margin-top: 16px;
-
-    padding: 8px 16px;
-
-border-radius: 4px;
-background-color: #ff4f4f;
-border: none;
-color: white;
-
-font-weight: bold;
+#header button{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    padding: 15px 80px;
+    
+    border-radius: 4px;
+    background-color: #ff4f4f;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.082) ;
 
 
-
+    border: none;
+    color: white;
+    font-weight: bold;
 }
-
+#header button:hover{
+    background-color: #4f6fff;
+    
+}
 
 .logo {
-width: 120px;
-margin-top:  70px;
-
-
+    width: 190px;
+    margin-top:  70px;
+    
+    
 }
- header p{
-
-    font-size: 14px;
- }
+#header p{
+    
+    font-size: 15px;
+    color: rgba(65, 65, 65, 0.637);
+    text-align: start;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+}
 
 
 /*FORM*/
 section.form{
-display: grid;
-grid-template-columns: 1fr 1fr;
-
-grid-gap: 45px;
-
-align-items: center;
-
-
-background-color: #ff4f4f;
-
-padding:16px 64px ;
-
-border-radius: 6px;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    grid-gap: 45px;
+    
+    align-items: center;
+    
+    
+    background-color: #ff4f4f;
+    
+    padding:16px 64px ;
+    
+    border-radius: 6px;
+    
 }
 form input,
 form button{
-   
-   /*largura*/
+    
+    /*largura*/
     width: 100%;
     
     
@@ -141,102 +153,103 @@ form button{
     
     /*preenchimento*/ 
     padding: 8px 16px;
-
-
+    
+    
     /*bordas */
     border-radius: 4px;
-
+    
     border:1px #ffffff88 solid ;
-   
-
+    
+    
 }
 
 form input{
     background-color: transparent;
 }
 form input::placeholder{
-
+    
     color: #ffffffaa;
 }
 
 
 form button{
-
-font-weight: bold;
-
+    
+    font-weight: bold;
+    
 }
 
 
 /*  MAIN*/
 main .donors{
-
+    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
 }
 
 .blood{
-
-color: #ff4f4f;
-font-weight: bold;
-font-size: 12px;
-
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
+    
+    color: #ff4f4f;
+    font-weight: bold;
+    font-size: 12px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 
 .blood::before{
+    
+    content:"";
+    background-color: #ff4f4f11;
+    
+    
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    
+    /* formato de gota*/
+    border-radius: 50%;
+    border-top-right-radius: 0%;
+    
+    transform: rotate(-45deg);
 
-content:"";
-background-color: #ff4f4f11;
-
-
-width: 40px;
-height: 40px;
- position: absolute;
- 
-/* formato de gota*/
-border-radius: 50%;
-border-top-right-radius: 0%;
-
-transform: rotate(-45deg);
 }
 
 .donor p{
-
+    
     margin-top: 24px;
     margin-bottom: 64px;
     font-size: 14px;
     
 }
 footer{
-
+    
     margin-top: auto;
     padding-bottom:16;
-
+    
     border: 1px solid #eeee;
-    }
-
-
-
-
-    /*  funcionalidade javascript*/
-
-section.form{
-
-transition: all 300ms;
-
-
 }
 
-    section.form.hide{
 
-opacity: 0;
-visibility: hidden;
-height: 0;
-margin-top: -70px;
 
-  }
+
+/*  funcionalidade javascript*/
+
+section.form{
+    
+    transition: all 300ms;
+    
+    
+}
+
+section.form.hide{
+    
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin-top: -70px;
+    
+}
