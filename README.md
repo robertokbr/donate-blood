@@ -34,19 +34,23 @@ A simple web application that owns the objective to create a database of people 
 
 ### HOW TO USE
 
-- Install yarn or npm and run the cmd to install the dependecies.
-
 ```jsx
 $ git clone https://github.com/robertokbr/Donate-Blood.git
 ```
+- Install yarn or npm and run the cmd to install the dependecies.
+
 ```jsx
 $ yarn / npm install
 ```
+
 - Run the migrations to start the database.
+
 ```jsx
 $ yarn/npm run:migrations 
 ```
+
 - Run the server.
+
 ```jsx
 $ yarn/npm start
 ```
