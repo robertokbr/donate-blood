@@ -10,21 +10,18 @@ A simple web application that owns the objective to create a database of people 
 
 
 ## Built With
-
-* Html.
-* Css.
-* JavaScript.
 * Node.Js
 * Express.Js
-* PostgreSQL
+* knex.JS
+* Sqlite3
 * Nodemon
 * Nunjucks
  
 ## User Stories
 
-- [x] User can show and hide the input box.
-- [x] User can add their data at the input box.
-- [x] if any input box it is null, the app will return an error message.
+- [x] User can show and hide the form.
+- [x] User can input their data at the input box.
+- [x] if any input box is null, the app will return an error message.
 - [x] User can see his data at the "Last donors" section.
 
 
@@ -37,12 +34,20 @@ A simple web application that owns the objective to create a database of people 
 
 ### HOW TO USE
 
-- Install yarn and run the cmd
+- Install yarn or npm and run the cmd to install the dependecies.
 
 ```jsx
 $ git clone https://github.com/robertokbr/Donate-Blood.git
-$ yarn
-$ yarn start
 ```
-
+```jsx
+$ yarn / npm install
+```
+- Run the migrations to start the database.
+```jsx
+$ yarn/npm run:migrations 
+```
+- Run the server.
+```jsx
+$ yarn/npm start
+```
 
