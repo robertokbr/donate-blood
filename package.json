@@ -4,15 +4,19 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "run:migrations": "knex --knexfile knexfile.js migrate:latest",
+    "seeds": "knex --knexfile knexfile.js seed:run"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "knex": "^0.21.1",
     "nodemon": "^2.0.2",
     "nunjucks": "^3.2.0",
-    "pg": "^7.18.2"
+    "sqlite3": "^4.2.0"
   }
 }
