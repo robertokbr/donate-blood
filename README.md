@@ -1,18 +1,18 @@
 
 <img src="https://github.com/robertokbr/Donate-Blood/blob/master/.Github/WhvLsNrFRV.gif" /><br>
 
-
+<p align="center">
+  <a href="https://donate-blood-maratonadev.herokuapp.com/" target="_blank">
+    <img alt="Demo on Netlify" src="https://res.cloudinary.com/lukemorales/image/upload/v1563043495/readme_logos/demo_on_netlify_bbuvjz.png">
+  </a>
+</p>
 
 
 # Donate Blood
 
 A simple web application that owns the objective to create a database of people who want to donate blood.
 
-<p align="center">
-  <a href="https://donate-blood-maratonadev.herokuapp.com/" target="_blank">
-    <img alt="Demo on Netlify" src="https://res.cloudinary.com/lukemorales/image/upload/v1563043495/readme_logos/demo_on_netlify_bbuvjz.png">
-  </a>
-</p>
+
 
 ## Built With
 * Node.Js
