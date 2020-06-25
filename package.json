@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "run:migrations": "knex --knexfile knexfile.js migrate:latest",
     "seeds": "knex --knexfile knexfile.js seed:run"
 
