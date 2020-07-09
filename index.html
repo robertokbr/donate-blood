@@ -2,10 +2,9 @@
 <html>
 
 <head>
-
-    <!--configurações da minha pagina-->
+    
     <title> Doe Vida! doe sangue </title>
-
+    
     <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -14,75 +13,84 @@
 
 
 <body>
-
+    
     <header>
         <nav>
-
-        <li><a href="/">Mais informações</a></li>
-        <li><a href="#">Como Doar</a></li>
-        <li><a href="#">Contatos</a></li>
-    </nav>
+            
+            <li><a href="http://portalarquivos.saude.gov.br/campanhas/doesangue/">Mais informações</a></li>
+            <li><a href="http://saude.gov.br/saude-de-a-z/doacao-de-sangue">Como Doar</a></li>
+            <li><a href="http://www.acessoainformacao.gov.br/">Contatos</a></li>
+        </nav>
     </header>
-
+    
     <div id="container">
         <div id="arte">
             <img id="heart" src="/heart.svg" alt="Coração">
-
+            
         </div>
-
+        
         <div id="app">
             <div id="header">
                 <img class="logo" src="/logo.png" alt="DOE picture">
-
+                
                 <h2>A sua doação importa!</h2>
                 <p> Até 3 vidas com 1 doação </p>
                 <p>Mais de 38.000 doações são necessárias todos os dias</p>
                 <p>Apenas 1,9% da população brasileira doa sangue</p>
-
+                
                 <button>Quero ajudar</button>
-
-
+                
+                
             </div>
-
+            
             <section class="form hide">
                 <h2>Entre na lista de doadores</h2>
                 <form action="/" method="post">
-
+                    
                     <input type="text" name="name" placeholder="nome completo">
                     <input type="text" name="email" placeholder="email">
-                    <input type="text" name="blood" placeholder="tipo sanguineo">
-                    <button>quero ajudar</button>
+                    <select type="text" name="blood" placeholder="tipo sanguineo">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                    <button>Quero ajudar!</button>
                 </form>
-
-
+                
+                
             </section>
         </div>
     </div>
     <main>
-
-
-
-        <h2>Últimos <span>doadores </span></h2>
-
+        
+        
+        
+        <h2>Últimos <span>Doadores </span></h2>
+        
         <section class="donors">
-
-            {% for donor in donors %}
-
+            
+            {% for serializedDonor in serializedDonors %}
+            
             <div class="donor">
-                <div class="blood">{{donor.blood}}</div>
-                <p>{{donor.name}}</p>
+                <div class="blood">{{serializedDonor.blood}}</div>
+                <p>{{serializedDonor.name}}</p>
             </div>
-
-
-
+            
+            
+            
             {%endfor%}
         </section>
-
+        
     </main>
-
-    <footer><a href="linkedin.com/in/robertojrcdc" target="_blank" rel="noopener noreferrer">Roberto Junior</a></footer>
+    
+    <footer><a href="linkedin.com/in/robertojrcdc" target="_blank" rel="noopener noreferrer">Join me on linkedin ✌</a></footer>
     <script src="/script.js"></script>
-
+    
 </body>
 
 </html>

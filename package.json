@@ -1,22 +1,21 @@
 {
-  "name": "maratonadev",
+  "name": "Donate-Blood",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "main": "index.js",
+  "repository": "https://github.com/robertokbr/Donate-Blood.git",
+  "author": "Roberto Junior <robertojr-13-@hotmail.com>",
+  "license": "MIT",
   "scripts": {
-    "start": "node server.js",
-    "run:migrations": "knex --knexfile knexfile.js migrate:latest",
-    "seeds": "knex --knexfile knexfile.js seed:run"
-
+    "dev:server": "nodemon server.js",
+    "migrations:run": "knex --knexfile knexfile.js migrate:latest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "knex": "^0.21.1",
-    "nodemon": "^2.0.2",
-    "nunjucks": "^3.2.0",
-    "sqlite3": "^4.2.0"
+    "nunjucks": "^3.2.1",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

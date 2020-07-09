@@ -13,6 +13,8 @@
 A simple web application that owns the objective to create a database of people who want to donate blood.
 
 
+## Pattern
+- Full MVC
 
 ## Built With
 * Node.Js
@@ -25,9 +27,8 @@ A simple web application that owns the objective to create a database of people 
 ## User Stories
 
 - [x] User can show and hide the form.
-- [x] User can input their data at the input box.
 - [x] if any input box is null, the app will return an error message.
-- [x] User can see his data at the "Last donors" section.
+- [x] User can see his first name and the blood type at the "Last donors" section.
 
 
 ## How to contribute
@@ -51,12 +52,12 @@ $ yarn / npm install
 - Run the migrations to start the database.
 
 ```jsx
-$ yarn/npm run:migrations 
+$ yarn migrations:run
 ```
 
 - Run the server.
 
 ```jsx
-$ yarn/npm start
+$ yarn/npm dev:server
 ```
 
