@@ -1,9 +1,13 @@
 
 <img src="https://github.com/robertokbr/Donate-Blood/blob/master/.Github/WhvLsNrFRV.gif" /><br>
 
-<a href="https://donate-blood-maratonadev.herokuapp.com/">
- <h1>Donate Blood</h1>
-</a>
+
+<h1>
+ <a href="https://donate-blood-maratonadev.herokuapp.com/">
+  Donate Blood
+ </a>
+</h1>
+
 
 A simple web application that owns the objective to create a database of people who want to donate blood.
 
